@@ -13,9 +13,9 @@ This template aims to be as minimal and vanilla as possible while still providin
 * `prettier`: Consistent formatting.
 * `husky`: Git commit hooks for linter and testing enforcement.
 * `lint-staged`: Efficient linting of staged chaged.
-* `cjs` and `esm` modes
-  * `esm` mode: Delete the `package.cjs.json` and `tsconfig.cjs.json` files.
-  * `cjs` mode: Replace `package.json` with `package.cjs.json`.
+* `esm` builds with optional `cjs` support
+  * `esm` only mode: Delete the `package.cjs.json` and `tsconfig.cjs.json` files.
+  * `esm` + `cjs` mode: Replace `package.json` with `package.cjs.json`.
 
 ## Installation
 
