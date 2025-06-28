@@ -23,7 +23,7 @@
     "clean": "rm -rf dist/ types/",
     "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "lint": "scripts/lint",
-    "test": "tsc -p tests && vitest run --config tests/vitest.config.ts",
+    "test": "tsc -p tests && vitest run --config tests/vitest.config.mts",
     "fix": "scripts/lint --fix"
   },
   "devDependencies": {
