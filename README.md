@@ -1,6 +1,6 @@
 # Node Simple Library Template
 
-A template for making node libraries with simple build requirements.
+A template for making node libraries with simple build requirements using vanilla `tsc`.
 
 ## Features
 
@@ -11,6 +11,7 @@ A template for making node libraries with simple build requirements.
 * `prettier`: Consistent formatting.
 * `husky`: Git commit hooks for linter and testing enforcement.
 * `lint-staged`: Efficient linting of staged chaged.
+* `cjs` and `esm` build output
 
 ## Installation
 
