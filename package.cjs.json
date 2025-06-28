@@ -4,21 +4,24 @@
   "repository": "github:etler/node-simple-library-template",
   "license": "MIT",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.js",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
-      "import": "./dist/esm/index.js",
+      "import": "./dist/index.js",
       "require": "./dist/cjs/index.js"
     }
   },
-  "files": ["dist", "types"],
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
     "prepublishOnly": "npm run clean && npm run build && npm run lint && npm run test",
     "prepare": "husky && ts-patch install -s",
     "clean": "rm -rf dist/ types/",
-    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
+    "build": "tsc && tsc -p tsconfig.cjs.json",
     "lint": "scripts/lint",
     "test": "tsc -p tests && vitest run --config tests/vitest.config.mts",
     "fix": "scripts/lint --fix"
