@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Using js config with function syntax to avoid passing file list because if tsc gets files as args
   // it ignores the tsconfig or throws if one is passed as arg as well via -p
   // https://github.com/okonet/lint-staged/issues/829#issuecomment-618649288
@@ -9,4 +9,4 @@ module.exports = {
   "package-lock.json": () => "./scripts/lint",
   // Make sure package.json and package-lock.json are in sync when dependencies update
   "package.json|package-lock.json": () => "npm install --frozen-lockfile",
-}
+};
