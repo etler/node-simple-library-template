@@ -1,4 +1,4 @@
-import { someExport } from "@/index";
+import { someExport } from "@/index.js";
 
 describe("Node Simple Library Template", () => {
   describe("someExport", () => {
