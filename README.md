@@ -4,6 +4,8 @@ A template for making node libraries with simple build requirements using vanill
 
 ## Features
 
+This template aims to be as minimal and vanilla as possible while still providing setup for modern best practices.
+
 * `typescript`: Type safety.
 * `typescript-transform-paths`: Allows for `@/` absolute imports.
 * `vitest`: Test library
