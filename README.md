@@ -12,6 +12,7 @@ A template for making node libraries with simple build requirements using vanill
 * `husky`: Git commit hooks for linter and testing enforcement.
 * `lint-staged`: Efficient linting of staged chaged.
 * `cjs` and `esm` build output
+  * Note: To convert this template to `esm` only, remove `tsconfig.cjs.json` and `tsconfig.cjs.json` and add `"type": "module"` to `package.json`
 
 ## Installation
 
