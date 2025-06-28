@@ -25,6 +25,12 @@ npm install node-simple-library-template
 yarn add node-simple-library-template
 ```
 
+To extend this library, clone it into a custom project, then delete the `.git` directory to start fresh.
+
+```sh
+git clone git@github.com:etler/node-simple-library-template.git some-project
+```
+
 ## Usage
 
 ```typescript
