@@ -13,15 +13,13 @@
       "require": "./dist/cjs/index.js"
     }
   },
-  "files": [
-    "dist",
-    "types"
-  ],
+  "files": ["dist", "types"],
   "scripts": {
     "prepublishOnly": "npm run clean && npm run build && npm run lint && npm run test",
     "prepare": "husky && ts-patch install -s",
     "clean": "rm -rf dist/ types/",
     "build": "tsc && tsc -p tsconfig.cjs.json",
+    "dev": "tsc -w",
     "lint": "npx eslint",
     "test": "tsc -p tests && vitest run --config tests/vitest.config.mts",
     "fix": "npx eslint --fix"
