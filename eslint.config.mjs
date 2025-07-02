@@ -29,7 +29,6 @@ export default tseslint.config({
     "no-eval": "error",
     "no-extend-native": "error",
     "no-implicit-coercion": "error",
-    "no-inline-comments": "error",
     "no-labels": "error",
     "no-lonely-if": "error",
     "no-multi-str": "error",
