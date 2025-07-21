@@ -1,10 +1,10 @@
-import eslint from "@eslint/js"
-import tseslint from "typescript-eslint"
-import eslintPluginPrettier from "eslint-plugin-prettier/recommended"
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 
 export default tseslint.config({
   files: ["**/*.ts"],
-  ignores: ["dist/*", "types/*"],
+  ignores: ["dist/**/*", "types/**/*"],
   extends: [
     eslint.configs.recommended,
     tseslint.configs.strictTypeChecked,
@@ -72,10 +72,7 @@ export default tseslint.config({
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
-    "@typescript-eslint/switch-exhaustiveness-check": [
-      "error",
-      { considerDefaultExhaustiveForUnions: true },
-    ],
+    "@typescript-eslint/switch-exhaustiveness-check": ["error", { considerDefaultExhaustiveForUnions: true }],
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
@@ -88,4 +85,4 @@ export default tseslint.config({
       },
     ],
   },
-})
+});
